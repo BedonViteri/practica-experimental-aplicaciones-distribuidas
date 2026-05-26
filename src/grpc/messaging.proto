@@ -1,18 +1,38 @@
+// Versión de protobuf utilizada en el proyecto
 syntax = "proto3";
+
+// Paquete principal del sistema de mensajería distribuida
 package messaging;
 
+
+// Servicio gRPC encargado del intercambio de mensajes
 service MessagingService {
+  // Método remoto para enviar mensajes entre nodos
   rpc SendMessage (MessageRequest) returns (MessageResponse);
 }
 
+
+// Estructura del mensaje enviado por el cliente
 message MessageRequest {
+
+  // Nombre del nodo emisor
   string sender    = 1;
+
+  // Marca de tiempo lógica de Lamport
   int64  timestamp = 2;
+
+  // Contenido del mensaje
   string message   = 3;
 }
 
+// Estructura de la respuesta enviada por el servidor
 message MessageResponse {
+  // Nombre del servidor que responde
   string sender    = 1;
+
+  // Timestamp actualizado del servidor
   int64  timestamp = 2;
+
+  // Estado de confirmación del mensaje
   string status    = 3;
 }
