@@ -1,4 +1,4 @@
-import socket, json, time, csv
+import socket, json, time, csv, os, statistics
 
 class LamportClock:
     def __init__(self):
@@ -21,33 +21,56 @@ def send_message(host, port, sender, message, clock):
     t1 = time.perf_counter()
     resp = json.loads(data.decode())
     ts_final = clock.update(resp.get("timestamp", ts))
-    return (t1 - t0) * 1000, ts_final
+    return (t1 - t0) * 1000, ts_final, resp
 
-def run_experiment(host="127.0.0.1", port=5000, sender="node1",
-                   n_warmup=5, n_measure=100, output_csv="data/latency_sockets.csv"):
+def run_experiment(host="127.0.0.1", port=5000, sender="node1"):
     clock = LamportClock()
+    exchanges = []
     latencies = []
 
-    for i in range(n_warmup):
+    os.makedirs("data", exist_ok=True)
+
+    # 20 intercambios con registro JSON
+    print(f"\n--- 20 intercambios Lamport ({sender}) ---")
+    for i in range(20):
+        lat, ts, resp = send_message(host, port, sender, f"intercambio-{i+1}", clock)
+        entry = {
+            "intercambio": i + 1,
+            "sender": sender,
+            "timestamp_envio": ts - 1,
+            "timestamp_servidor": resp.get("timestamp"),
+            "timestamp_final": ts,
+            "latency_ms": round(lat, 4)
+        }
+        exchanges.append(entry)
+        print(f"  [{i+1:02d}] LT_envio={entry['timestamp_envio']} | LT_servidor={entry['timestamp_servidor']} | LT_final={ts}")
+
+    with open(f"data/exchanges_{sender}.json", "w") as f:
+        json.dump(exchanges, f, indent=2)
+    print(f"  JSON guardado en data/exchanges_{sender}.json")
+
+    # 5 envios de calentamiento
+    for i in range(5):
         send_message(host, port, sender, f"warmup-{i}", clock)
 
-    for i in range(n_measure):
-        lat, ts = send_message(host, port, sender, f"msg-{i}", clock)
+    # 100 envios para medir latencia
+    print(f"\n--- 100 envios latencia ({sender}) ---")
+    for i in range(100):
+        lat, ts, _ = send_message(host, port, sender, f"msg-{i}", clock)
         latencies.append({"iteration": i+1, "latency_ms": round(lat, 4), "lamport_ts": ts})
         print(f"  [{i+1:03d}] LT={ts:4d} | {lat:.3f} ms")
 
-    with open(output_csv, "w", newline="") as f:
+    with open("data/latency_sockets.csv", "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["iteration", "latency_ms", "lamport_ts"])
         writer.writeheader()
         writer.writerows(latencies)
 
     lats = [r["latency_ms"] for r in latencies]
-    import statistics
     print(f"\n--- Resumen TCP ({sender}) ---")
     print(f"  Media:   {statistics.mean(lats):.3f} ms")
     print(f"  Mediana: {statistics.median(lats):.3f} ms")
     print(f"  Std Dev: {statistics.stdev(lats):.3f} ms")
-    print(f"  CSV guardado en: {output_csv}")
+    print(f"  CSV guardado en: data/latency_sockets.csv")
 
 if __name__ == "__main__":
     run_experiment()

@@ -1,0 +1,162 @@
+[
+  {
+    "intercambio": 1,
+    "sender": "node1",
+    "timestamp_envio": 481,
+    "timestamp_servidor": 481,
+    "timestamp_final": 482,
+    "latency_ms": 19.4547
+  },
+  {
+    "intercambio": 2,
+    "sender": "node1",
+    "timestamp_envio": 484,
+    "timestamp_servidor": 484,
+    "timestamp_final": 485,
+    "latency_ms": 0.8948
+  },
+  {
+    "intercambio": 3,
+    "sender": "node1",
+    "timestamp_envio": 487,
+    "timestamp_servidor": 487,
+    "timestamp_final": 488,
+    "latency_ms": 0.7069
+  },
+  {
+    "intercambio": 4,
+    "sender": "node1",
+    "timestamp_envio": 490,
+    "timestamp_servidor": 490,
+    "timestamp_final": 491,
+    "latency_ms": 0.769
+  },
+  {
+    "intercambio": 5,
+    "sender": "node1",
+    "timestamp_envio": 493,
+    "timestamp_servidor": 493,
+    "timestamp_final": 494,
+    "latency_ms": 0.8655
+  },
+  {
+    "intercambio": 6,
+    "sender": "node1",
+    "timestamp_envio": 496,
+    "timestamp_servidor": 496,
+    "timestamp_final": 497,
+    "latency_ms": 0.7339
+  },
+  {
+    "intercambio": 7,
+    "sender": "node1",
+    "timestamp_envio": 499,
+    "timestamp_servidor": 499,
+    "timestamp_final": 500,
+    "latency_ms": 0.6293
+  },
+  {
+    "intercambio": 8,
+    "sender": "node1",
+    "timestamp_envio": 502,
+    "timestamp_servidor": 502,
+    "timestamp_final": 503,
+    "latency_ms": 0.6974
+  },
+  {
+    "intercambio": 9,
+    "sender": "node1",
+    "timestamp_envio": 505,
+    "timestamp_servidor": 505,
+    "timestamp_final": 506,
+    "latency_ms": 0.5952
+  },
+  {
+    "intercambio": 10,
+    "sender": "node1",
+    "timestamp_envio": 508,
+    "timestamp_servidor": 508,
+    "timestamp_final": 509,
+    "latency_ms": 0.6237
+  },
+  {
+    "intercambio": 11,
+    "sender": "node1",
+    "timestamp_envio": 511,
+    "timestamp_servidor": 511,
+    "timestamp_final": 512,
+    "latency_ms": 0.8186
+  },
+  {
+    "intercambio": 12,
+    "sender": "node1",
+    "timestamp_envio": 514,
+    "timestamp_servidor": 514,
+    "timestamp_final": 515,
+    "latency_ms": 0.8055
+  },
+  {
+    "intercambio": 13,
+    "sender": "node1",
+    "timestamp_envio": 517,
+    "timestamp_servidor": 517,
+    "timestamp_final": 518,
+    "latency_ms": 0.9529
+  },
+  {
+    "intercambio": 14,
+    "sender": "node1",
+    "timestamp_envio": 520,
+    "timestamp_servidor": 520,
+    "timestamp_final": 521,
+    "latency_ms": 0.7845
+  },
+  {
+    "intercambio": 15,
+    "sender": "node1",
+    "timestamp_envio": 523,
+    "timestamp_servidor": 523,
+    "timestamp_final": 524,
+    "latency_ms": 0.8312
+  },
+  {
+    "intercambio": 16,
+    "sender": "node1",
+    "timestamp_envio": 526,
+    "timestamp_servidor": 526,
+    "timestamp_final": 527,
+    "latency_ms": 0.68
+  },
+  {
+    "intercambio": 17,
+    "sender": "node1",
+    "timestamp_envio": 529,
+    "timestamp_servidor": 529,
+    "timestamp_final": 530,
+    "latency_ms": 0.8944
+  },
+  {
+    "intercambio": 18,
+    "sender": "node1",
+    "timestamp_envio": 532,
+    "timestamp_servidor": 532,
+    "timestamp_final": 533,
+    "latency_ms": 0.8398
+  },
+  {
+    "intercambio": 19,
+    "sender": "node1",
+    "timestamp_envio": 535,
+    "timestamp_servidor": 535,
+    "timestamp_final": 536,
+    "latency_ms": 0.8707
+  },
+  {
+    "intercambio": 20,
+    "sender": "node1",
+    "timestamp_envio": 538,
+    "timestamp_servidor": 538,
+    "timestamp_final": 539,
+    "latency_ms": 1.0633
+  }
+]
