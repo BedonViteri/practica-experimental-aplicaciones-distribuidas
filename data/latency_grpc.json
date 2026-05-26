@@ -1,0 +1,142 @@
+[
+    {
+        "iteration": 1,
+        "message": "msg-1",
+        "latency_ms": 10.13,
+        "lamport_ts": 3,
+        "status": "OK"
+    },
+    {
+        "iteration": 2,
+        "message": "msg-2",
+        "latency_ms": 1.5319,
+        "lamport_ts": 6,
+        "status": "OK"
+    },
+    {
+        "iteration": 3,
+        "message": "msg-3",
+        "latency_ms": 0.8467,
+        "lamport_ts": 9,
+        "status": "OK"
+    },
+    {
+        "iteration": 4,
+        "message": "msg-4",
+        "latency_ms": 0.6065,
+        "lamport_ts": 12,
+        "status": "OK"
+    },
+    {
+        "iteration": 5,
+        "message": "msg-5",
+        "latency_ms": 0.4061,
+        "lamport_ts": 15,
+        "status": "OK"
+    },
+    {
+        "iteration": 6,
+        "message": "msg-6",
+        "latency_ms": 0.3806,
+        "lamport_ts": 18,
+        "status": "OK"
+    },
+    {
+        "iteration": 7,
+        "message": "msg-7",
+        "latency_ms": 1.3226,
+        "lamport_ts": 21,
+        "status": "OK"
+    },
+    {
+        "iteration": 8,
+        "message": "msg-8",
+        "latency_ms": 1.0408,
+        "lamport_ts": 24,
+        "status": "OK"
+    },
+    {
+        "iteration": 9,
+        "message": "msg-9",
+        "latency_ms": 1.1942,
+        "lamport_ts": 27,
+        "status": "OK"
+    },
+    {
+        "iteration": 10,
+        "message": "msg-10",
+        "latency_ms": 0.651,
+        "lamport_ts": 30,
+        "status": "OK"
+    },
+    {
+        "iteration": 11,
+        "message": "msg-11",
+        "latency_ms": 0.4681,
+        "lamport_ts": 33,
+        "status": "OK"
+    },
+    {
+        "iteration": 12,
+        "message": "msg-12",
+        "latency_ms": 0.3624,
+        "lamport_ts": 36,
+        "status": "OK"
+    },
+    {
+        "iteration": 13,
+        "message": "msg-13",
+        "latency_ms": 0.3865,
+        "lamport_ts": 39,
+        "status": "OK"
+    },
+    {
+        "iteration": 14,
+        "message": "msg-14",
+        "latency_ms": 0.421,
+        "lamport_ts": 42,
+        "status": "OK"
+    },
+    {
+        "iteration": 15,
+        "message": "msg-15",
+        "latency_ms": 0.5026,
+        "lamport_ts": 45,
+        "status": "OK"
+    },
+    {
+        "iteration": 16,
+        "message": "msg-16",
+        "latency_ms": 0.5075,
+        "lamport_ts": 48,
+        "status": "OK"
+    },
+    {
+        "iteration": 17,
+        "message": "msg-17",
+        "latency_ms": 0.405,
+        "lamport_ts": 51,
+        "status": "OK"
+    },
+    {
+        "iteration": 18,
+        "message": "msg-18",
+        "latency_ms": 0.4025,
+        "lamport_ts": 54,
+        "status": "OK"
+    },
+    {
+        "iteration": 19,
+        "message": "msg-19",
+        "latency_ms": 0.3555,
+        "lamport_ts": 57,
+        "status": "OK"
+    },
+    {
+        "iteration": 20,
+        "message": "msg-20",
+        "latency_ms": 0.3545,
+        "lamport_ts": 60,
+        "status": "OK"
+    }
+]
