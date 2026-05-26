@@ -1,0 +1,162 @@
+[
+  {
+    "intercambio": 1,
+    "sender": "node3",
+    "timestamp_envio": 748,
+    "timestamp_servidor": 748,
+    "timestamp_final": 749,
+    "latency_ms": 65.5066
+  },
+  {
+    "intercambio": 2,
+    "sender": "node3",
+    "timestamp_envio": 751,
+    "timestamp_servidor": 751,
+    "timestamp_final": 752,
+    "latency_ms": 58.846
+  },
+  {
+    "intercambio": 3,
+    "sender": "node3",
+    "timestamp_envio": 754,
+    "timestamp_servidor": 754,
+    "timestamp_final": 755,
+    "latency_ms": 69.6356
+  },
+  {
+    "intercambio": 4,
+    "sender": "node3",
+    "timestamp_envio": 757,
+    "timestamp_servidor": 757,
+    "timestamp_final": 758,
+    "latency_ms": 47.8476
+  },
+  {
+    "intercambio": 5,
+    "sender": "node3",
+    "timestamp_envio": 760,
+    "timestamp_servidor": 760,
+    "timestamp_final": 761,
+    "latency_ms": 71.3928
+  },
+  {
+    "intercambio": 6,
+    "sender": "node3",
+    "timestamp_envio": 763,
+    "timestamp_servidor": 763,
+    "timestamp_final": 764,
+    "latency_ms": 63.5566
+  },
+  {
+    "intercambio": 7,
+    "sender": "node3",
+    "timestamp_envio": 766,
+    "timestamp_servidor": 766,
+    "timestamp_final": 767,
+    "latency_ms": 63.0143
+  },
+  {
+    "intercambio": 8,
+    "sender": "node3",
+    "timestamp_envio": 769,
+    "timestamp_servidor": 769,
+    "timestamp_final": 770,
+    "latency_ms": 64.0446
+  },
+  {
+    "intercambio": 9,
+    "sender": "node3",
+    "timestamp_envio": 772,
+    "timestamp_servidor": 772,
+    "timestamp_final": 773,
+    "latency_ms": 70.9556
+  },
+  {
+    "intercambio": 10,
+    "sender": "node3",
+    "timestamp_envio": 775,
+    "timestamp_servidor": 775,
+    "timestamp_final": 776,
+    "latency_ms": 47.5275
+  },
+  {
+    "intercambio": 11,
+    "sender": "node3",
+    "timestamp_envio": 778,
+    "timestamp_servidor": 778,
+    "timestamp_final": 779,
+    "latency_ms": 68.2133
+  },
+  {
+    "intercambio": 12,
+    "sender": "node3",
+    "timestamp_envio": 781,
+    "timestamp_servidor": 781,
+    "timestamp_final": 782,
+    "latency_ms": 46.9996
+  },
+  {
+    "intercambio": 13,
+    "sender": "node3",
+    "timestamp_envio": 784,
+    "timestamp_servidor": 784,
+    "timestamp_final": 785,
+    "latency_ms": 85.2808
+  },
+  {
+    "intercambio": 14,
+    "sender": "node3",
+    "timestamp_envio": 787,
+    "timestamp_servidor": 787,
+    "timestamp_final": 788,
+    "latency_ms": 68.0747
+  },
+  {
+    "intercambio": 15,
+    "sender": "node3",
+    "timestamp_envio": 790,
+    "timestamp_servidor": 790,
+    "timestamp_final": 791,
+    "latency_ms": 77.5662
+  },
+  {
+    "intercambio": 16,
+    "sender": "node3",
+    "timestamp_envio": 793,
+    "timestamp_servidor": 793,
+    "timestamp_final": 794,
+    "latency_ms": 57.2092
+  },
+  {
+    "intercambio": 17,
+    "sender": "node3",
+    "timestamp_envio": 796,
+    "timestamp_servidor": 796,
+    "timestamp_final": 797,
+    "latency_ms": 64.2055
+  },
+  {
+    "intercambio": 18,
+    "sender": "node3",
+    "timestamp_envio": 799,
+    "timestamp_servidor": 799,
+    "timestamp_final": 800,
+    "latency_ms": 31.4784
+  },
+  {
+    "intercambio": 19,
+    "sender": "node3",
+    "timestamp_envio": 802,
+    "timestamp_servidor": 802,
+    "timestamp_final": 803,
+    "latency_ms": 80.2255
+  },
+  {
+    "intercambio": 20,
+    "sender": "node3",
+    "timestamp_envio": 805,
+    "timestamp_servidor": 805,
+    "timestamp_final": 806,
+    "latency_ms": 77.7379
+  }
+]

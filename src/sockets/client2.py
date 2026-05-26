@@ -73,4 +73,4 @@ def run_experiment(host="127.0.0.1", port=5000, sender="node1"):
     print(f"  CSV guardado en: data/latency_sockets.csv")
 
 if __name__ == "__main__":
-run_experiment(port=5001, sender="node2")
+    run_experiment(port=5001, sender="node2")
