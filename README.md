@@ -16,6 +16,7 @@ TCP Sockets vs gRPC con relojes lógicos de Lamport en un sistema de tres nodos.
 
 ## Estructura
 
+```
 practica-experimental-aplicaciones-distribuidas/
 ├── src/
 │   ├── sockets/
@@ -36,6 +37,7 @@ practica-experimental-aplicaciones-distribuidas/
 │       └── boxplot.png
 ├── analisis.py
 └── README.md
+```
 
 ## Ejecución
 
