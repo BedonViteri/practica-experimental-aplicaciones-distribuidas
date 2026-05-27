@@ -3,6 +3,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
+from tabulate import tabulate
 
 tcp = pd.read_csv('data/latency_sockets.csv')['latency_ms']
 grpc = pd.read_csv('data/latency_grpc.csv')['latency_ms']
@@ -30,3 +31,19 @@ ax.grid(axis='y', linestyle='--', alpha=0.5)
 plt.tight_layout()
 plt.savefig('docs/boxplot.png', dpi=300)
 print("\nBoxplot guardado en docs/boxplot.png")
+
+# Tabla comparativa - Castro Lopez Pedro
+tabla = [
+    ["Protocolo base",       "TCP directo",                "HTTP/2 sobre TCP"],
+    ["Serializacion",        "JSON / texto plano",         "Protocol Buffers (binario)"],
+    ["Latencia promedio",    f"{tcp.mean():.3f} ms",       f"{grpc.mean():.3f} ms"],
+    ["Desv. estandar",       f"{tcp.std():.3f} ms",        f"{grpc.std():.3f} ms"],
+    ["Percentil 95",         f"{np.percentile(tcp,95):.3f} ms", f"{np.percentile(grpc,95):.3f} ms"],
+    ["Overhead conexion",    "Bajo",                       "Medio (HTTP/2)"],
+    ["Tipado de mensajes",   "No (manual)",                "Si (schema .proto)"],
+    ["Streaming nativo",     "No",                         "Si (4 modos)"],
+    ["Uso recomendado",      "IoT, baja latencia",         "Microservicios, APIs internas"],
+]
+
+print("\n═══════ TABLA COMPARATIVA TCP SOCKETS vs gRPC ═══════")
+print(tabulate(tabla, headers=["Caracteristica", "TCP Sockets", "gRPC"], tablefmt="fancy_grid"))
